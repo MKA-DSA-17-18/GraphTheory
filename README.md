@@ -59,4 +59,8 @@
 ## Algorithms
 ### Topological Sort
 
-### Shortest Path Problem
+### Shortest Path Problem 
+#### Dijkstra's Algorithm
+### Minimum Spanning Tree
+#### Prim's Algorithm
+#### Kruskals Algorithm
