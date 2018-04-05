@@ -49,18 +49,37 @@
   * a trail in a graph that contains all edges
   
 * Eulerian Circuit
-   a circuit that contains all the edges
+  * a circuit that contains all the edges
    
 ## Representing Graphs
+  
 ### Adjacency Matrices
+  * a matrix that displays which vertices are connected by an edge represented by 1s and 0s
+  * if it's directed it's row to column
+  * if its undirected it will be symmetrical over the left diagonal \
 ### Adjacency Lists
+  * list of each vertex and all nodes it is connected to
+  * useful for topological sort
+  * have in degree version and out degree version
 
 
 ## Algorithms
 ### Topological Sort
-
+  * a graph theory sorting algorithm in which we use an adjacency list starting with the node with a null input degree, removing the node with null input from all the adjacency lists, then repeat for next null input degree vertex
+  * if you pick any two vertices, they will appear sorted in that order
+  * has to be a directed acyclical graph
 ### Shortest Path Problem 
+  * finding shortest possible path for one point to another
+  * find paths from one vertex to every other vertex at the same time because it has the same big O as finding the path from 1 to 1
+
+
+
 #### Dijkstra's Algorithm
+  * start with a vertex, set it as known (and remove from set of unknowns), then update the distances to its unknown neighbors, find next smallest distance connecting to another unknown and repeat
 ### Minimum Spanning Tree
+  * to find lowest cost that makes the entire graph connected as a tree
+  * no cycles
 #### Prim's Algorithm
+  * start off at any vertex, pick least cost edge going out, from any known vertices pick next least cost edge, repeat
 #### Kruskals Algorithm
+  * list all edge costs, start from beginning and choose them in order from least to greatest while avoiding cycles
